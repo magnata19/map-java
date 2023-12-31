@@ -21,7 +21,7 @@ public class ExemploMap {
       put("Gol", 14.4);
       put("Uno", 15.6);
       put("Mobi", 16.1);
-      put("HB20", 15.6);
+      put("HB20", 14.5);
       put("Kwid", 15.6);
     }};
 
@@ -55,14 +55,54 @@ public class ExemploMap {
     System.out.println("Modelo mais economico: " + modeloMaisEconomico + " - Consumo: " + consumoMaisEconomico);
 
     System.out.println("Exiba o modelo menos econômico e seu consumo.");
-    Double consumoMenosEconomico = Collections.min(carrosPopulares.values());
-    Set<Map.Entry<String, Double>> entries2 = carrosPopulares.entrySet();
-    String modeloMenosEconomico = "";
-    for(Map.Entry<String, Double> entry: entries2) {
-      if(entry.getValue().equals(consumoMenosEconomico)){
-        modeloMenosEconomico = entry.getKey();
+    Double consumoMenosEficiente = Collections.min(carrosPopulares.values());
+    String modeloMenosEficiente = "";
+    for(Map.Entry<String, Double> entry: carrosPopulares.entrySet()){
+      if(entry.getValue().equals(consumoMenosEficiente)){
+        modeloMenosEficiente = entry.getKey();
+        System.out.println("Modelo menos eficiente: " + modeloMenosEficiente + " - Consumo: " + consumoMenosEficiente);
       }
     }
-    System.out.println("Modelo menos economico: " + modeloMenosEconomico + " consumo " + consumoMenosEconomico);
+
+    Iterator<Double> iterator = carrosPopulares.values().iterator();
+    Double soma = 0d;
+    while(iterator.hasNext()) {
+      soma += iterator.next();
+    }
+    System.out.println("Exiba a soma dos consumos: " + soma);
+
+    System.out.println("Exiba a média dos consumos deste dicionário de carros: " + (soma/carrosPopulares.size()));
+
+    System.out.println("Remova os modelos com consumo igual a 15,6km/l: ");
+    Iterator<Double> iterator1 = carrosPopulares.values().iterator();
+    while (iterator1.hasNext()) {
+      if (iterator1.next().equals(15.6)) iterator1.remove();
+    }
+    for(Map.Entry<String, Double> carros: carrosPopulares.entrySet()) {
+      System.out.println(carros);
+    }
+
+    System.out.println("Exiba todos os carros na ordem em que foram informados: ");
+    Map<String, Double> carrosPopulares1 = new LinkedHashMap<>() {{
+      //nao temos o metodo add em map
+      //as chaves tem de ser unicas, ja os valores podem ser duplicados
+      put("Gol", 14.4);
+      put("Uno", 15.6);
+      put("Mobi", 16.1);
+      put("HB20", 14.5);
+      put("Kwid", 15.6);
+    }};
+
+    System.out.println(carrosPopulares1.toString());
+
+    System.out.println("Exiba o dicionário ordenado pelo modelo: ");
+    Map<String, Double> carrosPopulares2 = new TreeMap<>(carrosPopulares1);
+    System.out.println(carrosPopulares2);
+
+    System.out.println("Apague o dicionário de carros: ");
+    carrosPopulares2.clear();
+    System.out.println(carrosPopulares2);
+
+    System.out.println("Confira se o dicionário está vazio: " + carrosPopulares2.isEmpty());
   }
   }

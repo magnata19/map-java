@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6efc6997-c17f-4931-a3cb-bd3e719014a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/ExemploMap.java" afterDir="false" />
+    <list default="true" id="6efc6997-c17f-4931-a3cb-bd3e719014a5" name="Changes" comment="metodos da interface map">
+      <change afterPath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/ExemploOrdenacaoMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/ExemploMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/one/digitalinnovation/ExemploMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +39,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.ExemploMap.executor": "Run",
+    "Application.ExemploOrdenacaoMap.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -67,6 +64,19 @@
       <option name="presentableId" value="Default" />
       <updated>1703979995470</updated>
     </task>
+    <task id="LOCAL-00001" summary="metodos da interface map">
+      <option name="closed" value="true" />
+      <created>1703987018312</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703987018312</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="metodos da interface map" />
+    <option name="LAST_COMMIT_MESSAGE" value="metodos da interface map" />
   </component>
 </project>
